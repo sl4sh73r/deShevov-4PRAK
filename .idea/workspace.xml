@@ -4,18 +4,9 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9e1704b6-33b7-491c-99d7-0408ea4f31ba" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/TokenController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/util/JwtParser.java" afterDir="false" />
+    <list default="true" id="9e1704b6-33b7-491c-99d7-0408ea4f31ba" name="Changes" comment="Update CSS and add verify Token">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Client.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/KeyUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Server.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,12 +24,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;sl4sh73r&quot;
-  }
-}</component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {}
+}]]></component>
   <component name="GithubPullRequestsUISettings"><![CDATA[{
   "selectedUrlAndAccountId": {
     "url": "https://github.com/sl4sh73r/deShevov-4PRAK",
@@ -130,8 +118,17 @@
       <workItem from="1733130112818" duration="13000" />
       <workItem from="1733130134825" duration="5937000" />
       <workItem from="1733339096508" duration="1972000" />
-      <workItem from="1733341075610" duration="7796000" />
+      <workItem from="1733341075610" duration="8444000" />
     </task>
+    <task id="LOCAL-00001" summary="Update CSS and add verify Token">
+      <option name="closed" value="true" />
+      <created>1733351107092</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1733351107092</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -147,6 +144,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Update CSS and add verify Token" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update CSS and add verify Token" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
