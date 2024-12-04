@@ -11,11 +11,24 @@ function connect() {
         stompClient.subscribe('/topic/server-log', function (message) {
             appendLog('server-log', message.body, 'server');
         });
+        stompClient.subscribe('/topic/client-log', function (message) {
+            appendLog('client-log', message.body, 'client');
+        });
+        stompClient.subscribe('/topic/token-log', function (message) {
+            appendLog('token-log', message.body, 'token');
+        });
     });
 }
 
 function appendLog(logId, message, type) {
     const logElement = document.getElementById(logId);
+    const lastLogEntry = logElement.lastElementChild;
+
+    // Check if the last log entry is the same as the new message
+    if (lastLogEntry && lastLogEntry.textContent === formatMessage(message)) {
+        return;
+    }
+
     const logEntry = document.createElement('div');
     logEntry.className = `log-entry ${type}`;
     logEntry.textContent = formatMessage(message);
@@ -24,47 +37,50 @@ function appendLog(logId, message, type) {
 }
 
 function formatMessage(message) {
-    return message.replace(/(Server started|Client started|Received from server:|Sent to server:|Server response:)/g, '\n$1\n');
+    return message.replace(/(Server started|Client started|Received from server:|Sent to server:|Server response:|Parsed token:)/g, '\n$1\n');
+}
+
+function fetchAndLog(url, logId, type) {
+    fetch(url)
+        .then(response => response.text())
+        .then(data => {
+            appendLog(logId, data, type);
+        });
 }
 
 function startServer() {
-    fetch('/server/start-server')
-        .then(response => response.text())
-        .then(data => {
-            // appendLog('server-log', data, 'server');
-        });
+    fetchAndLog('/server/start-server', 'server-log', 'server');
 }
 
 function stopServer() {
-    fetch('/server/stop-server')
-        .then(response => response.text())
-        .then(data => {
-            // appendLog('server-log', data, 'server');
-        });
+    fetchAndLog('/server/stop-server', 'server-log', 'server');
 }
 
 function startClient() {
-    fetch('/client/start-client')
-        .then(response => response.text())
-        .then(data => {
-            appendLog('client-log', data, 'client');
-        });
+    fetchAndLog('/client/start-client', 'client-log', 'client');
 }
 
 function stopClient() {
-    fetch('/client/stop-client')
-        .then(response => response.text())
-        .then(data => {
-            appendLog('client-log', data, 'client');
-        });
+    fetchAndLog('/client/stop-client', 'client-log', 'client');
 }
 
 function sendMessage() {
-    fetch('/client/send-message')
-        .then(response => response.text())
-        .then(data => {
-            appendLog('client-log', data, 'client');
-        });
+    fetchAndLog('/client/send-message', 'client-log', 'client');
+}
+
+function parseToken() {
+    const token = document.getElementById('token-input').value;
+    fetch('/token/parse', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ token: token })
+    })
+    .then(response => response.text())
+    .then(data => {
+        appendLog('token-log', data, 'token');
+    });
 }
 
 window.onload = function() {
