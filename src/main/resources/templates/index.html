@@ -20,13 +20,15 @@
         </div>
         <div class="column">
             <h2>Client</h2>
-            <button onclick="startClient()">Start Client</button>
-            <button onclick="stopClient()">Stop Client</button>
+            <div class="button-container">
+                <button onclick="startClient()">Start Client</button>
+                <button onclick="stopClient()">Stop Client</button>
+            </div>
             <button onclick="sendMessage()">Send Message</button>
             <pre id="client-log" class="log"></pre>
         </div>
         <div class="column">
-            <h2>Token Parser</h2>
+            <h2>Token Verify</h2>
             <input type="text" id="token-input" placeholder="Enter JWT token">
             <button onclick="parseToken()">Token Verify</button>
             <pre id="token-log" class="log"></pre>

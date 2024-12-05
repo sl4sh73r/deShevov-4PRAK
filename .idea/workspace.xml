@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9e1704b6-33b7-491c-99d7-0408ea4f31ba" name="Changes" comment="Update CSS and add verify Token">
+    <list default="true" id="9e1704b6-33b7-491c-99d7-0408ea4f31ba" name="Changes" comment="feat: Update CSS for improved layout and fixed log heights&#10;&#10;- Converted layout to use CSS Grid for better responsiveness.&#10;- Set fixed height for log `pre` elements to prevent scaling based on content.&#10;- Added horizontal scrollbar to `pre` elements for better readability.&#10;- Updated styles for buttons and columns for a more consistent look.&#10;- Ensured the token parser form is positioned and styled appropriately.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/KeyGenerator.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +120,7 @@
       <workItem from="1733130112818" duration="13000" />
       <workItem from="1733130134825" duration="5937000" />
       <workItem from="1733339096508" duration="1972000" />
-      <workItem from="1733341075610" duration="8444000" />
+      <workItem from="1733341075610" duration="10081000" />
     </task>
     <task id="LOCAL-00001" summary="Update CSS and add verify Token">
       <option name="closed" value="true" />
@@ -128,7 +130,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733351107092</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="feat: Update CSS for improved layout and fixed log heights&#10;&#10;- Converted layout to use CSS Grid for better responsiveness.&#10;- Set fixed height for log `pre` elements to prevent scaling based on content.&#10;- Added horizontal scrollbar to `pre` elements for better readability.&#10;- Updated styles for buttons and columns for a more consistent look.&#10;- Ensured the token parser form is positioned and styled appropriately.">
+      <option name="closed" value="true" />
+      <created>1733351822990</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1733351822990</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -147,7 +157,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Update CSS and add verify Token" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update CSS and add verify Token" />
+    <MESSAGE value="feat: Update CSS for improved layout and fixed log heights&#10;&#10;- Converted layout to use CSS Grid for better responsiveness.&#10;- Set fixed height for log `pre` elements to prevent scaling based on content.&#10;- Added horizontal scrollbar to `pre` elements for better readability.&#10;- Updated styles for buttons and columns for a more consistent look.&#10;- Ensured the token parser form is positioned and styled appropriately." />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Update CSS for improved layout and fixed log heights&#10;&#10;- Converted layout to use CSS Grid for better responsiveness.&#10;- Set fixed height for log `pre` elements to prevent scaling based on content.&#10;- Added horizontal scrollbar to `pre` elements for better readability.&#10;- Updated styles for buttons and columns for a more consistent look.&#10;- Ensured the token parser form is positioned and styled appropriately." />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>

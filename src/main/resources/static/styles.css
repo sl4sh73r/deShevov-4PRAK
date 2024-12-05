@@ -24,6 +24,8 @@ h1 {
 }
 
 .column {
+    width: 400px; /* Fixed width */
+    height: 500px; /* Fixed height */
     background-color: #3a3a3a; /* Dark gray background for columns */
     padding: 20px;
     border-radius: 8px;
@@ -92,4 +94,24 @@ pre {
 
 #token-parser button:hover {
     background-color: #6a1b9a; /* Slightly darker purple on hover */
+}
+#token-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #2e2e2e; /* Match the background color */
+    color: #e0e0e0; /* Match the text color */
+    font-size: 16px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+#token-input::placeholder {
+    color: #888; /* Lighter color for placeholder text */
+}
+
+.button-container {
+    display: flex;
+    gap: 10px; /* Adjust the gap between buttons as needed */
 }
